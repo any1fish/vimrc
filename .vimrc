@@ -1,3 +1,10 @@
+"
+" The sample VIMRC file I use. 
+" How to use this file:
+" 1. Clone the repository and copy this file as ~/.vimrc
+" 2. Install Vundle: https://github.com/VundleVim/Vundle.vim
+" 3. That's it.
+
 "Vundle"
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -15,7 +22,6 @@ Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 " Avoid a name conflict with L9
@@ -23,13 +29,10 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin on    " required
 Plugin 'pangloss/vim-javascript'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'Raimondi/delimitMate'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'moll/vim-node'
-Plugin 'Valloric/YouCompleteMe'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Following is my customized commands"
 set hlsearch
 set ignorecase
@@ -46,8 +49,11 @@ command NT NERDTree
 command NTF NERDTreeFind
 command GD GoDef
 command C CommandT
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Setting for syntastic
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -63,10 +69,11 @@ let g:syntastic_go_checkers= ["golint"]
 " gjslint is taken out.
 let g:syntastic_javascript_checkers= []
 let g:syntastic_python_checkers= []
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Customized extension syntax highlight. "
 au BufRead,BufNewFile *.coffee set filetype=python
 au BufRead,BufNewFile *.eco set filetype=html
 
-" Set Mapping leader key"
-let mapleader = "_"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
