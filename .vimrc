@@ -24,13 +24,14 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Pass the path to set the runtimepath properly.
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-" Avoid a name conflict with L9
+Plugin 'scrooloose/nerdcommenter'
 
-call vundle#end()            " required
-filetype plugin on    " required
 Plugin 'pangloss/vim-javascript'
 Plugin 'fatih/vim-go'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'nsf/gocode', {'rtp': 'nvim/'}
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Following is my customized commands"
@@ -42,12 +43,15 @@ filetype plugin on
 set tabstop=4
 set expandtab
 set ruler
-set noro
+set autoindent
 set nowrap
+set shiftwidth=4
+set smarttab
 color torte
 command NT NERDTree
 command NTF NERDTreeFind
 command GD GoDef
+command GI GoImplements
 command C CommandT
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
