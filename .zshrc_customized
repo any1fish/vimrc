@@ -1,0 +1,5 @@
+# Install zsh and the oh-my-zsh plugin at: https://github.com/robbyrussell/oh-my-zsh
+# Customized configuration for z shell.
+# Use 'source .zshrc_customized' to include this file to zsh config.
+alias vim=nvim
+alias vi=nvim
