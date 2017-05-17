@@ -2,3 +2,4 @@
 1. Clone this into local repo. Copy the .vimrc to replace system .vimrc.
 2. Follow the instruction to install vundle: https://github.com/VundleVim/Vundle.vim
      git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+3. For nvim, put .vimrc as in ~/.config/nvim/init.vim
