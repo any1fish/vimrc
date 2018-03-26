@@ -18,8 +18,8 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'zchee/deoplete-go', { 'do': 'make'}
+" Plugin 'Shougo/deoplete.nvim'
+" Plugin 'zchee/deoplete-go', { 'do': 'make'}
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -30,7 +30,7 @@ Plugin 'moll/vim-node'
 Plugin 'majutsushi/tagbar'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'solarnz/thrift.vim'
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
